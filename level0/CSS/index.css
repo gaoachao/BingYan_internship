@@ -1,0 +1,147 @@
+body { 
+    max-width:540px;
+    min-width:320px;
+    margin:0 auto;
+    font:normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    color:#000;
+    overflow-x:hidden;
+    -webkit-tap-highlight-color:transparent;
+}
+div{
+    box-sizing:border-box;
+}
+
+/*搜索模块*/
+.search-index{
+    background-color: #fff;
+    display:flex;
+    position:fixed;
+    top:0;
+    left:50%;
+    -webkit-transform:translateX(-50%); /*兼容*/
+    transform:translateX(-50%);
+    width:100%;  /*固定的盒子需要设置宽度*/
+    height:50px;
+    min-width:320px;
+    max-width:540px;
+}
+.search{
+    height:26px;
+    border:1px solid #ccc;
+    flex:1;
+    margin:12px 15px 4px 15px;
+    border-radius:5px;
+    color:rgb(190,194,201);
+    font-size:12px;
+    line-height:26px;  /*line-height = height - border*2 */
+    background-color:rgb(239,241,244);
+    /*box-shadow:0 2px 4px rgba(0,0,0,.2);*/
+}
+.search i{
+    margin:0 5px;
+}
+.search span{
+    margin:0 5px;
+}
+
+.check{
+    margin-left:10px;
+    margin-right:10px;
+    width: 60px;
+    height:50px;
+    background-color:#fff;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    color:rgb(127,133,144);
+}
+.check span{
+    font-size:16px;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.container {
+    min-width:320px;
+    max-width:540px;
+    width:100%;
+    position:fixed;
+    margin-top:50px;
+	height: 50px;
+    
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.nav {
+	height: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	/*解决ios上滑动不流畅*/
+	-webkit-overflow-scrolling: touch;
+}
+
+.con {
+	width: 175%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	border-bottom: 7px rgb(239,241,244) solid;
+}
+
+.con>a {
+	text-align: center;
+	width: auto;
+	color: rgb(127,133,144);
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.con>a.active {
+	border-bottom: 2px rgb(67, 138, 246) solid;
+	color: rgb(67, 138, 246);
+}
+
+
+.container ::-webkit-scrollbar {
+	display: none;
+}
+
+
+.tabbar {
+    position: fixed;
+    border-top:1px rgb(239,241,244) solid;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fff;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabbar .tabbar-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    color: rgb(127,133,144);
+    font-size: 13px;
+    line-height: 12px;
+}
+
+/*Font Awesome 6 Free
+  Font Awesome 5 Free
+  Font Awesome 5 Brands
+  FontAwesome */
