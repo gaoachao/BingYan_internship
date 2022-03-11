@@ -114,7 +114,131 @@ html {
 	display: none;
 }
 
+/*中间内容块*/
 
+.timeline-content{
+    width: 100%;
+    top:100px;
+    background-color: #bfa;
+    position: relative;
+}
+.timeline-content-list{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.item{
+    transition: all .3s ease-in;
+}
+.advertisement{
+    position: relative;
+    cursor: pointer;
+    padding: 12px 20px 0;
+}
+.advertisement .meta-container {
+    display: flex;
+    align-items: center;
+}
+.advertisement .user-message{
+    display: flex;
+    align-items: center;
+}
+.advertisement .user-message .userbox{
+    max-width: 162px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #4e5969;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.popver-box{
+    display:inline;
+}
+.advertisement .main{
+    margin-top: 6px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: normal;
+    align-items: normal;
+    border-bottom: 1px solid #e5e6eb;
+}
+.advertisement .meta-container .dividing {
+    width: 1px;
+    height: 14px;
+    background: #e5e6eb;
+    margin: 0 8px;
+}
+.advertisement .meta-container .date {
+    line-height: 22px;
+    font-size: 13px;
+    color: #86909c;
+}
+.advertisement .tag {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    border: 1px solid #c9cdd4;
+    box-sizing: border-box;
+    border-radius: 2px;
+    line-height: 18px;
+    width: 42px;
+    text-align: center;
+    color: #c9cdd4;
+    font-size: 13px;
+}
+.advertisement .main .info-box {
+    flex-grow: 1;
+}
+.advertisement .main .info-box .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d2129;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.advertisement .main .info-box .description{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #86909c;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.advertisement .main .thumb {
+    margin-left: 12px;
+}
+.advertisement .main img{
+    width:120px;
+    height:80px;
+}
+.lazy:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+
+
+/*底部菜单栏*/
 .tabbar {
     position: fixed;
     border-top:1px rgb(239,241,244) solid;
