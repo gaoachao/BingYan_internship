@@ -14,103 +14,308 @@
     <link rel="stylesheet" href="./CSS/fa/css/all.css">
 </head>
 
-<body>
-    <!-- 顶部搜索和签到 -->
-    <div class="search-index">
-        <div class="search">
-            <i class="fas fa-search" style="font-size:17px;"></i>
-            <span>探索稀土掘金</span>
+<body id="main">
+      <!-- 顶部搜索和签到 -->
+      <div class="search-index">
+          <div class="search">
+              <i class="fas fa-search" style="font-size:17px;"></i>
+              <span>探索稀土掘金</span>
+          </div>
+
+          <a href="#" class="check">
+              <i class="fas fa-calendar-alt" style="font-size:18px;"></i>
+              <span>签到</span>
+          </a>
+      </div>
+
+      <!-- 顶部导航条 -->
+      <div class="container">
+        <nav class="nav">
+            <p class="con">
+                <a href="javascript:void(0);">关注</a>
+                <a href="javascript:void(0);">推荐</a>
+                <a href="javascript:void(0);">热榜</a>
+                <a href="javascript:void(0);">头条精选</a>
+                <a href="javascript:void(0);">后端</a>
+                <a href="javascript:void(0);">前端</a>
+                <a href="javascript:void(0);">Android</a>
+                <a href="javascript:void(0);">iOS</a>
+                <a href="javascript:void(0);">人工智能</a>
+                <a href="javascript:void(0);">开发工具</a>
+                <a href="javascript:void(0);">代码人生</a>
+            </p>
+        </nav>
+        <div class="omiter">
+            <i class="fas fa-bars" style="font-size:22px;color:#4e5969;"></i>
         </div>
+      </div>
+      <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+      <script type="text/javascript" src="js/rem.js"></script>
 
-        <a href="#" class="check">
-            <i class="fas fa-calendar-alt" style="font-size:18px;"></i>
-            <span>签到</span>
-        </a>
-    </div>
-
-    <main role="main" class="App-main">
-        <!-- 顶部导航条 -->
-        <div class="container">
-            <nav class="nav">
-                <p class="con">
-                    <a href="javascript:void(0);">关注</a>
-                    <a href="javascript:void(0);">推荐</a>
-                    <a href="javascript:void(0);">热榜</a>
-                    <a href="javascript:void(0);">头条精选</a>
-                    <a href="javascript:void(0);">后端</a>
-                    <a href="javascript:void(0);">前端</a>
-                    <a href="javascript:void(0);">Android</a>
-                    <a href="javascript:void(0);">iOS</a>
-                    <a href="javascript:void(0);">人工智能</a>
-                    <a href="javascript:void(0);">开发工具</a>
-                    <a href="javascript:void(0);">代码人生</a>
-                </p>
-            </nav>
-        </div>
-        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="js/rem.js"></script>
-
-        <!-- 中间内容块 广告 -->
-        <div class="main-container">
-            <div class="timeline-content">
-                <div class="timeline-content-list">
-                    <li class="item">
-                        <div class="advertisement">
-                            <div class="meta-container">
-                                <div class="user-message">
-                                    <a href="#" class="userbox">
-                                        <div class="popover-box">稀土君</div>
-                                    </a>
-                                </div>
-                                <div class="dividing">
-
-                                </div>
-                                <div class="date">一天前</div>
-                                <div class="tag">广告</div>
-                            </div>
-                            <div class="main">
-                                <div class="info-box">
-                                    <a href="#" class="title">支持超80亿元项目的代码，大厂是怎么写的？</a>
-                                    <a hred="#" class="description">
-                                        据不完全统计，2022 年春节期间，各家互联网企业狂撒的红包价值
-                                        总额超 84 亿元，其中包括快手分 22 亿、百度分 22 亿、
-                                        抖音分 20 亿、京东分 15 亿、支付宝分 5 亿、新浪微博分 1 亿。
-                                      </a>
-                                </div>
-                                <img src="./images/advertisement.png" alt="支持超80亿元项目的代码，大厂是怎么写的？ 的封面" class="thumb"></img>
-                            </div>
-                        </div>
-                        <div></div>
-                        <div></div>
-                </div>
-                </li>
+      <div class="tab">
+        <!-- 中间内容块 -->
+        <div class="timeline-content">
+            <div class="timeline-content-list">
                 <li class="item">
-                    <div class="entry">
-
+                    <div class="advertisement">
+                        <div class="meta-container">
+                            <div class="user-message">
+                                <a href="#" class="userbox">
+                                    <div class="popover-box">稀土君</div>
+                                </a>
+                            </div>
+                            <div class="dividing"></div>
+                            <div class="date">一天前</div>
+                            <div class="tag">广告</div>
+                        </div>
+                        <div class="main">
+                            <div class="info-box">
+                                <a href="#" class="title">支持超80亿元项目的代码，大厂是怎么写的？</a>
+                                <a hred="#" class="description">
+                                    据不完全统计，2022 年春节期间，各家互联网企业狂撒的红包价值
+                                    总额超 84 亿元，其中包括快手分 22 亿、百度分 22 亿、
+                                    抖音分 20 亿、京东分 15 亿、支付宝分 5 亿、新浪微博分 1 亿。
+                                </a>
+                            </div>
+                            <img src="./images/advertisement.png" alt="支持超80亿元项目的代码，大厂是怎么写的？ 的封面" class="thumb"></img>
+                        </div>
                     </div>
-                </li>
             </div>
+            </li>
+            <li class="item">
+                <div class="entry">
+                    <div class="meta-container">
+                        <a href="#" class="user-message">
+                            <div class="popover-box user-popover">前端胖头鱼</div>
+                        </a>
+                        <div class="dividing"></div>
+                        <div class="date">1个月前</div>
+                        <div class="dividing"></div>
+                        <div class="tag_list">
+                            <a href="#" class="tag">前端</a>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content-main">
+                            <div class="title-row">
+                                <a href="#" class="title">Github上9个美观大气的后台管理系统</a>
+                            </div>
+                            <div class="abstract ">
+                                <a hred="#">
+                                    一套既美观又方便的后台框架可以大大幅节约开发时间和成本，本文推荐 9 款漂亮、
+                                    功能强大的后台模板，本文推荐的开源项目已经收录到 Awesome GitHub Repo。
+                                </a>
+                            </div>
+                            <ul class="action-list">
+                                <li class="item view">
+                                    <i class="fas fa-fire-alt" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>4.5w</span>
+                                </li>
+                                <li class="item like">
+                                    <i class="fas fa-thumbs-up" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>213</span>
+                                </li>
+                                <li class="item comment">
+                                    <i class="fas fa-share-square" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>200</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/containr1.webp" alt="" class="thumb lazy"></img>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="entry">
+                    <div class="meta-container">
+                        <a href="#" class="user-message">
+                            <div class="popover-box user-popover">前端胖头鱼</div>
+                        </a>
+                        <div class="dividing"></div>
+                        <div class="date">1个月前</div>
+                        <div class="dividing"></div>
+                        <div class="tag_list">
+                            <a href="#" class="tag">前端</a>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content-main">
+                            <div class="title-row">
+                                <a href="#" class="title">Github上9个美观大气的后台管理系统</a>
+                            </div>
+                            <div class="abstract ">
+                                <a hred="#">
+                                    一套既美观又方便的后台框架可以大大幅节约开发时间和成本，本文推荐 9 款漂亮、
+                                    功能强大的后台模板，本文推荐的开源项目已经收录到 Awesome GitHub Repo。
+                                </a>
+                            </div>
+                            <ul class="action-list">
+                                <li class="item view">
+                                    <i class="fas fa-fire-alt" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>4.5w</span>
+                                </li>
+                                <li class="item like">
+                                    <i class="fas fa-thumbs-up" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>213</span>
+                                </li>
+                                <li class="item comment">
+                                    <i class="fas fa-share-square" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>200</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/containr1.webp" alt="" class="thumb lazy"></img>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="entry">
+                    <div class="meta-container">
+                        <a href="#" class="user-message">
+                            <div class="popover-box user-popover">前端胖头鱼</div>
+                        </a>
+                        <div class="dividing"></div>
+                        <div class="date">1个月前</div>
+                        <div class="dividing"></div>
+                        <div class="tag_list">
+                            <a href="#" class="tag">前端</a>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content-main">
+                            <div class="title-row">
+                                <a href="#" class="title">Github上9个美观大气的后台管理系统</a>
+                            </div>
+                            <div class="abstract ">
+                                <a hred="#">
+                                    一套既美观又方便的后台框架可以大大幅节约开发时间和成本，本文推荐 9 款漂亮、
+                                    功能强大的后台模板，本文推荐的开源项目已经收录到 Awesome GitHub Repo。
+                                </a>
+                            </div>
+                            <ul class="action-list">
+                                <li class="item view">
+                                    <i class="fas fa-fire-alt" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>4.5w</span>
+                                </li>
+                                <li class="item like">
+                                    <i class="fas fa-thumbs-up" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>213</span>
+                                </li>
+                                <li class="item comment">
+                                    <i class="fas fa-share-square" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>200</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/containr1.webp" alt="" class="thumb lazy"></img>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="entry">
+                    <div class="meta-container">
+                        <a href="#" class="user-message">
+                            <div class="popover-box user-popover">前端胖头鱼</div>
+                        </a>
+                        <div class="dividing"></div>
+                        <div class="date">1个月前</div>
+                        <div class="dividing"></div>
+                        <div class="tag_list">
+                            <a href="#" class="tag">前端</a>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content-main">
+                            <div class="title-row">
+                                <a href="#" class="title">Github上9个美观大气的后台管理系统</a>
+                            </div>
+                            <div class="abstract ">
+                                <a hred="#">
+                                    一套既美观又方便的后台框架可以大大幅节约开发时间和成本，本文推荐 9 款漂亮、
+                                    功能强大的后台模板，本文推荐的开源项目已经收录到 Awesome GitHub Repo。
+                                </a>
+                            </div>
+                            <ul class="action-list">
+                                <li class="item view">
+                                    <i class="fas fa-fire-alt" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>4.5w</span>
+                                </li>
+                                <li class="item like">
+                                    <i class="fas fa-thumbs-up" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>213</span>
+                                </li>
+                                <li class="item comment">
+                                    <i class="fas fa-share-square" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>200</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/containr1.webp" alt="" class="thumb lazy"></img>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="entry">
+                    <div class="meta-container">
+                        <a href="#" class="user-message">
+                            <div class="popover-box user-popover">前端胖头鱼</div>
+                        </a>
+                        <div class="dividing"></div>
+                        <div class="date">1个月前</div>
+                        <div class="dividing"></div>
+                        <div class="tag_list">
+                            <a href="#" class="tag">前端</a>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content-main">
+                            <div class="title-row">
+                                <a href="#" class="title">Github上9个美观大气的后台管理系统</a>
+                            </div>
+                            <div class="abstract ">
+                                <a hred="#">
+                                    一套既美观又方便的后台框架可以大大幅节约开发时间和成本，本文推荐 9 款漂亮、
+                                    功能强大的后台模板，本文推荐的开源项目已经收录到 Awesome GitHub Repo。
+                                </a>
+                            </div>
+                            <ul class="action-list">
+                                <li class="item view">
+                                    <i class="fas fa-fire-alt" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>4.5w</span>
+                                </li>
+                                <li class="item like">
+                                    <i class="fas fa-thumbs-up" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>213</span>
+                                </li>
+                                <li class="item comment">
+                                    <i class="fas fa-share-square" style="font-size:14px;color:#4e5969;"></i>
+                                    <span>200</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./images/containr1.webp" alt="" class="thumb lazy"></img>
+                    </div>
+                </div>
+              </li>
+
+
+
+    </div>
+        <!-- 底部菜单栏 -->
+        <div class="tabbar">
+            <a href="javascript:load_index();" class="tabbar-link">
+                <i class="fas fa-home" style="font-size:21px;"></i>
+                <span>首页</span>
+            </a>
+            <a href="javascript:load_boiling();" class="tabbar-link">
+                <i class="fas fa-compass" style="font-size:21px;"></i>
+                <span>沸点</span>
+            </a>
+            <a href="javascript:load_home();" class="tabbar-link">
+                <i class="fas fa-user-tie" style="font-size:21px;"></i>
+                <span>我</span>
+            </a>
         </div>
-        </div>
-    </main>
-
-
-
-
-    <!-- 底部菜单栏 -->
-    <div class="tabbar">
-        <a href="javascript:;" class="tabbar-link">
-            <i class="fas fa-home" style="font-size:21px;"></i>
-            <span>首页</span>
-        </a>
-        <a href="javascript:;" class="tabbar-link">
-            <i class="fas fa-compass" style="font-size:21px;"></i>
-            <span>沸点</span>
-        </a>
-        <a href="javascript:;" class="tabbar-link">
-            <i class="fas fa-user-tie" style="font-size:21px;"></i>
-            <span>我</span>
-        </a>
     </div>
 </body>
 
@@ -125,4 +330,12 @@
             });
         });
     });
+
+    function load_home() {
+        document.getElementById("main").innerHTML = '<object type="text/html" data="D:/BingYan_internship/dig-gold/home.html" width="100%" height="600px"></object>';}
+    function load_index() {
+        document.getElementById("main").innerHTML = '<object type="text/html" data="D:/BingYan_internship/dig-gold/index.html" width="100%" height="600px"></object>';}
+    function load_boiling() {
+        document.getElementById("main").innerHTML = '<object type="text/html" data="D:/BingYan_internship/dig-gold/boiling.html" width="100%" height="600px"></object>';}
+
 </script>
