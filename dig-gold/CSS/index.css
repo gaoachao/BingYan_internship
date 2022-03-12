@@ -90,6 +90,7 @@ html {
 
 }
 
+
 .nav {
 	height: 100%;
 	overflow-x: scroll;
@@ -128,6 +129,31 @@ html {
 .container ::-webkit-scrollbar {
 	display: none;
 }
+/*隐藏菜单模块*/
+.omiter-border{
+    position:absolute;
+    top:87px;
+    width:100%;
+    height:200px;
+    z-index: 200;
+    border:1px red solid;
+    background-color: #fff;
+}
+
+.omiter-list .omiter-item{
+    float:left;
+}
+.omiter-list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    height:40px;
+}
+
+
+
+
 
 /*中间内容块*/
 
@@ -277,7 +303,6 @@ li {
     position: relative;
     flex-shrink: 0;
     font-size: 13px;
-    line-
     height: 22px;
     padding: 0 8px;
     color: #86909c;
