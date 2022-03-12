@@ -1,3 +1,264 @@
+
+.all{
+  display:flex;
+  flex-direction: column;
+}
+
+
+/*顶部图标栏*/
+.set-menu{
+  display:flex;
+  flex-direction: row-reverse;
+  height:30px;
+}
+.set-menu .home-icon{
+  margin:5px 5px 0 5px;
+}
+/*用户信息栏*/
+.user-menu{
+  height:100px;
+  display:flex;
+  flex-direction: row;
+  margin-top:20px;
+}
+.user-menu .user-head{
+  line-height:100px;
+  margin-left:40px;
+}
+.user-menu .login-word{
+  margin-left:30px;
+  line-height:100px;
+}
+.user-menu .login-word .login-title{
+  font-size:20px;
+  font-family:Microsoft YaHei;
+  color: #7f8590;
+}
+/*用户的点赞信息栏*/
+.user-information{
+  height:80px;
+  display:flex;
+  justify-content:space-around;
+}
+.user-like{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-like .like-number {
+  margin:0 auto;
+  font-size:25px;
+}
+.user-like .like{
+  font-size:18px;
+  color:#7f8590;
+}
+.user-collect{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-collect .collect-number {
+  margin:0 auto;
+  font-size:25px;
+}
+.user-collect .collect{
+  font-size:18px;
+  color:#7f8590;
+}
+.user-follow{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-follow .follow-number {
+  margin:0 auto;
+  font-size:25px;
+}
+.user-follow .follow{
+  font-size:18px;
+  color:#7f8590;
+}
+/*活动栏*/
+.activity{
+  display:flex;
+  justify-content: space-around;
+  height:120px;
+}
+.activity .register{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.activity .register .register-logo{
+  margin:0 auto;
+}
+.activity .register .register-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+}
+.activity .dial{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.activity .dial .dial-logo{
+  margin:0 auto;
+}
+.activity .dial .dial-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+}
+.activity .debug{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.activity .debug .debug-logo{
+  margin:0 auto;
+}
+.activity .debug .debug-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+}
+.activity .welfare{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.activity .welfare .welfare-logo{
+  margin:0 auto;
+}
+.activity .welfare .welfare-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+}
+/*更多功能模块*/
+.more-function{
+  display:flex;
+  height:170px;
+  flex-wrap:wrap;
+}
+.more-function .course{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .course .course-logo{
+  margin:0 auto;
+}
+.more-function .course .course-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+.more-function .pen{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .pen .pen-logo{
+  margin:0 auto;
+}
+.more-function .pen .pen-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+.more-function .circle{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .circle .circle-logo{
+  margin:0 auto;
+}
+.more-function .circle .circle-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+
+.more-function .read{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .read .read-logo{
+  margin:0 auto;
+}
+.more-function .read .read-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+.more-function .tags{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .tags .tags-logo{
+  margin:0 auto;
+}
+.more-function .tags .tags-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+.more-function .resume{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .resume .resume-logo{
+  margin:0 auto;
+}
+.more-function .resume .resume-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+.more-function .advice{
+  width:25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.more-function .advice .advice-logo{
+  margin:0 auto;
+}
+.more-function .advice .advice-word{
+  font-size:12px;
+  color:black;
+  margin-top:7px;
+  margin:7px auto 0 auto;
+}
+.function-word{
+  width:100%;
+  margin-top:8px;
+  margin-bottom:6px;
+}
+.function-word span{
+  font-size:20px;
+  margin-left:20px;
+}
+
 /*底部菜单栏*/
 .tabbar {
   position: fixed;

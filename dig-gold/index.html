@@ -16,7 +16,7 @@
     <script src=".js/jquery.min.js"></script>
 </head>
 
-<body id="main">
+<body >
       <!-- 顶部搜索和签到 -->
       <div class="search-index">
           <div class="search">
@@ -51,11 +51,11 @@
             	<i class="fas fa-bars" style="font-size:22px;color:#4e5969;"></i>
         	</div>
 				</div>
-
+        <!--隐藏菜单-->
 				<div class="omiter-border" id="msg">
         	<ul class="omiter-list">
 						<li class="omiter-item">
-							<div class="item-style">全部</div>
+							<div class="item-style-all ">全部</div>
 						</li>
 						<li class="omiter-item">
 							<div class="item-style">前端</div>
@@ -77,25 +77,37 @@
 						<li class="omiter-item">
 							<div class="item-style">CSS</div>
 						</li>
-						<li class="omiter-item">4</li>
+						<li class="omiter-item">
+							<div class="item-style">Leetcode</div>
+						</li>
 					</ul>
 					<ul class="omiter-list">
-						<li class="omiter-item">1</li>
-						<li class="omiter-item">2</li>
-						<li class="omiter-item">3</li>
-						<li class="omiter-item">4</li>
+						<li class="omiter-item">
+							<div class="item-style">Node.Js</div>
+						</li>
+						<li class="omiter-item">
+							<div class="item-style">面试</div>
+						</li>
+						<li class="omiter-item">
+							<div class="item-style">TypeScript</div>
+						</li>
+						<li class="omiter-item">
+							<div class="item-style">WebPack</div>
+						</li>
 					</ul>
 					<ul class="omiter-list">
-						<li class="omiter-item">1</li>
-						<li class="omiter-item">2</li>
-						<li class="omiter-item">3</li>
-						<li class="omiter-item">4</li>
-					</ul>
-					<ul class="omiter-list">
-						<li class="omiter-item">1</li>
-						<li class="omiter-item">2</li>
-						<li class="omiter-item">3</li>
-						<li class="omiter-item">4</li>
+						<li class="omiter-item">
+							<div class="item-style">架构</div>
+						</li>
+						<li class="omiter-item">
+							<div class="item-style">微信小程序</div>
+						</li>
+						<li class="omiter-item">
+							<div class="item-style">three.js</div>
+						</li>
+						<li class="omiter-item">
+							<div class="item-style">Flutter</div>
+						</li>
 					</ul>
 				</div>
 
@@ -372,14 +384,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-  $(".con").find("a:first-child").addClass("active");
-  $(".con>a").each(function (i) {
-      $(this).click(function () {
-          $(this).addClass("active").siblings().removeClass("active");
-      });
-  });
-});
-</script>
