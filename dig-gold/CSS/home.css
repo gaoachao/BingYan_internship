@@ -1,3 +1,13 @@
+body {
+  color: #222;
+  background: #fff;
+}
+
+body.dark{
+  color: #eee;
+  background: #121212;
+}
+
 
 .all{
   display:flex;
@@ -95,7 +105,7 @@
 }
 .activity .register .register-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
 }
 .activity .dial{
@@ -108,7 +118,7 @@
 }
 .activity .dial .dial-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
 }
 .activity .debug{
@@ -121,7 +131,7 @@
 }
 .activity .debug .debug-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
 }
 .activity .welfare{
@@ -134,7 +144,7 @@
 }
 .activity .welfare .welfare-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
 }
 /*更多功能模块*/
@@ -154,7 +164,7 @@
 }
 .more-function .course .course-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
@@ -169,7 +179,7 @@
 }
 .more-function .pen .pen-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
@@ -184,7 +194,7 @@
 }
 .more-function .circle .circle-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
@@ -200,7 +210,7 @@
 }
 .more-function .read .read-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
@@ -215,7 +225,7 @@
 }
 .more-function .tags .tags-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
@@ -230,7 +240,7 @@
 }
 .more-function .resume .resume-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
@@ -245,7 +255,7 @@
 }
 .more-function .advice .advice-word{
   font-size:12px;
-  color:black;
+  color:#7f8590;
   margin-top:7px;
   margin:7px auto 0 auto;
 }
