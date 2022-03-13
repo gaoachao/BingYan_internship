@@ -1,0 +1,64 @@
+input {
+  margin: 8px auto;
+  padding: 12px;
+  background-color: #eee;
+  border: none;
+  width:70%;
+}
+
+.register-account {
+  display: inline-block;
+  height: 20px;
+  text-decoration: none;
+  color: #bbb;
+  /*text-transform: capitalize;  文本中每个字母以大写开头*/
+  font-size: 12px;
+}
+
+button {
+  background: rgb(67, 138, 246);
+  padding: 10px 50px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  text-transform: uppercase; /*文本中只含有大写字母*/
+  color: white;
+  margin-top: 10px;
+  outline: none;
+  transition: transform 80;
+}
+.form-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display:flex;
+}
+
+h2 {
+  margin:10px auto;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.form-title{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+
+.form-main{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.form{
+  width:100%;
+  margin-top:100px;
+}
+
+.main-item{
+  display:flex;
+  justify-content:center;
+}
