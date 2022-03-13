@@ -11,5 +11,4 @@ function showhidediv(id){
   }
 }
 
-/*index顶部导航条实现点击变蓝事件*/
 

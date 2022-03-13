@@ -34,17 +34,17 @@
       	<div class="container">
         	<nav class="nav">
            	 	<p class="con">
-                <a href="javascript:void(0);">关注</a>
-                <a href="javascript:void(0);">推荐</a>
-                <a href="javascript:void(0);">热榜</a>
-                <a href="javascript:void(0);">头条精选</a>
-                <a href="javascript:void(0);">后端</a>
-                <a href="javascript:void(0);">前端</a>
-                <a href="javascript:void(0);">Android</a>
-                <a href="javascript:void(0);">iOS</a>
-                <a href="javascript:void(0);">人工智能</a>
-                <a href="javascript:void(0);">开发工具</a>
-                <a href="javascript:void(0);">代码人生</a>
+                <a href="javascript:;" class="lis">关注</a>
+                <a href="javascript:;" class="lis">推荐</a>
+                <a href="javascript:;" class="lis">热榜</a>
+                <a href="javascript:;" class="lis">头条精选</a>
+                <a href="javascript:;" class="lis">后端</a>
+                <a href="javascript:;" class="lis">前端</a>
+                <a href="javascript:;" class="lis">Android</a>
+                <a href="javascript:;" class="lis">iOS</a>
+                <a href="javascript:;" class="lis">人工智能</a>
+                <a href="javascript:;" class="lis">开发工具</a>
+                <a href="javascript:;" class="lis">代码人生</a>
             	</p>
         	</nav>
         	<div class="omiter" id="show" onMouseMove='showhidediv("msg")';>
@@ -384,3 +384,19 @@
 </body>
 
 </html>
+<!--index顶部导航条实现点击变蓝事件-->
+<script type="text/javascript">
+    var buttons=document.querySelectorAll(".lis");
+    var l=buttons.length;
+    for(var i=0;i<l;i++){
+        buttons[i].onclick=function(){
+            for(var j=0;j<l;j++){
+                if(this==buttons[j]){
+                    this.className="active";
+                }else{
+                    buttons[j].className="";
+                }
+            }
+        }
+    }
+</script>

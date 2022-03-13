@@ -95,7 +95,6 @@ html {
 	height: 100%;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	/*解决ios上滑动不流畅*/
 	-webkit-overflow-scrolling: touch;
     margin-left:13px;
 
@@ -120,9 +119,9 @@ html {
 	font-size: 18px;
 }
 
-.con>a.active {
+.active {
 	border-bottom: 2px rgb(67, 138, 246) solid;
-	color: rgb(67, 138, 246);
+	color: rgb(67,138,246) !important;
 }
 
 
