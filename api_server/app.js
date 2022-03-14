@@ -28,6 +28,10 @@ app.use(function (req, res, next) {
     next()
   })
 
+  // 托管静态资源文件
+app.use('/uploads', express.static('./uploads'))
+
+
 //在路由之前配置Token的中间件
 // 导入配置文件
 const config = require('./config')
@@ -53,6 +57,10 @@ const artCateRouter = require('./router/artcate')
 // 为文章分类的路由挂载统一的访问前缀 /my/article
 app.use('/my/article', artCateRouter)
 
+// 导入并使用文章路由模块
+const articleRouter = require('./router/article')
+// 为文章的路由挂载统一的访问前缀 /my/article
+app.use('/my/article', articleRouter)
 
 
 
