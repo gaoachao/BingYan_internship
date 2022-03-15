@@ -16,7 +16,7 @@
 <!--login-->
 <div class="form-container">
   <div class="form">
-
+    <form id="form" class="form" action="http://127.0.0.1:3007/api/regUser" method="post">
       <div class="form-title">
         <h2>register page</h2>
       </div class="form-main">
@@ -28,15 +28,16 @@
         <input type="password" name="password" id="password" placeholder="password...">
       </div>
       <div class="main-item">
-        <input type="repeat" name="repeat" id="repeat" placeholder="repeat...">
+        <input type="password" name="repeat" id="repeat" placeholder="repeat...">
       </div>
       <div class="main-item">
         <a href="./login.html" class="had-account">Already have an account</a>
       </div>
       <div class="main-item">
-        <button class="register">Register</button>
+        <button type="submit" formaction="http://127.0.0.1:3007/api/regUser" method="post" class="register">Register</button>
       </div>
-      </div>
+     </div>
+    </form>
 </div>
 
 <body>

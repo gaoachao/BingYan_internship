@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device,user-scalable=no,
+  initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/searcharticle.css">
+  <link rel="stylesheet" href="./CSS/fa/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="请输入关键字" id="search">
+      <ul class="list-group" id="list-box">
+
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript"  src="./js/ajax.js"></script>
+  <script src="./js/template-web.js"></script>
+  <script type="text/html" id="tpl">
+    {{each result}}
+    <li class="list-group-item">{{$value}}</li>
+    {{/each}}
+  </script>
+  <script>
+    //获取搜索框
+    var searchInp = document.getElementById('search');
+    //获取提示文字的存放容器
+    var listBox = document.getElementById('list-box');
+    //当用户在文本框中输入的时候触发
+    searchInp.oninput = function (){
+      //获取用户输入的内容
+      var key = this.value;
+      //向服务器端发送请求
+      ajax({
+        type:'get',
+        url:'http://127.0.0.1:3007/my/userinfo',
+        data:{
+          key:key
+        },
+        success:function(result){
+          var html = template('tpl',{result:result})
+          listBox.innerHTML = html ;
+          listBox.style.display = 'block';
+        }
+      })
+    }
+
+  </script>
+</body>
+</html>

@@ -11,12 +11,6 @@ const { add_cate_schema } = require('../schema/artcate')
 const { delete_cate_schema } = require('../schema/artcate')
 // 导入根据 Id 获取分类的验证规则对象
 const { get_cate_schema } = require('../schema/artcate')
-
-
-
-
-
-
 // 获取文章分类的列表数据
 router.get('/cates', artcate_handler.getArticleCates)
 // 新增文章分类的路由

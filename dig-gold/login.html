@@ -16,24 +16,25 @@
 <!--login-->
 <div class="form-container">
   <div class="form">
-
+    <form id="form" class="form" action="http://127.0.0.1:3007/api/login" method="post">
       <div class="form-title">
         <h2>sign in</h2>
       </div class="form-main">
 
       <div class="main-item">
-        <input type="username" name="username" id="username" placeholder="username...">
+        <input type="text" name="username" id="username" class="username" placeholder="username...">
       </div>
       <div class="main-item">
-        <input type="password" name="password" id="password" placeholder="Password...">
+        <input type="password" name="password" id="password" class="password" placeholder="Password...">
       </div>
       <div class="main-item">
         <a href="./register.html" class="register-account">Register an account</a>
       </div>
       <div class="main-item">
-        <button class="signIn">sign in</button>
+        <button type="submit" formaction="http://127.0.0.1:3007/api/login" method="post" class="login-button">sign in</button>
       </div>
-      </div>
+    </form>
+  </div>
 </div>
 
 <body>

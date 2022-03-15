@@ -6,12 +6,20 @@ const joi = require('@hapi/joi')
 
 // 导入 cors 中间件
 const cors = require('cors')
+
+
+app.get('/server',(request,response)=>{
+  response.setHeader('Access-Control-Allow-Origin','*');
+response.send('Hello AJAX')
+});
+
+
+
 // 将 cors 注册为全局中间件
 app.use(cors())
 
 //配置解析表单数据的中间件 只能解析application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }))
-
 
 // 响应数据的中间件
 // 在路由之前，封装res.cc函数
@@ -58,11 +66,10 @@ const artCateRouter = require('./router/artcate')
 app.use('/my/article', artCateRouter)
 
 // 导入并使用文章路由模块
-const articleRouter = require('./router/article')
+const articleRouter = require('./router/article');
+const { response } = require('express');
 // 为文章的路由挂载统一的访问前缀 /my/article
 app.use('/my/article', articleRouter)
-
-
 
 //定义错误级别的中间件
 app.use(function (err, req, res, next) {
@@ -73,11 +80,6 @@ app.use(function (err, req, res, next) {
 // 未知错误
     res.cc(err)
   })
-
-
-
-
-
 //启动服务器
 app.listen(3007,()=>{
     console.log('api server running at http://127.0.0.1:3007')

@@ -20,13 +20,6 @@ exports.regUser = (req, res) => {
   //if (!userinfo.username || !userinfo.password) {
   //return res.send({ status: 1, message: '用户名或密码不能为空！' })
   //}
-
-
-
-
-
-
-
  //定义 SQL 语句，查询用户名是否被占用
   const sql = `select * from ev_users where username=?`
   db.query(sql, [userinfo.username], function (err, results){
