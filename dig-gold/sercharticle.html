@@ -11,6 +11,15 @@
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/searcharticle.css">
   <link rel="stylesheet" href="./CSS/fa/css/all.css">
+  <style>
+    .container{
+        display:flex;
+    }
+    .container .form-group{
+      width:200px;
+      height:100px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -22,11 +31,6 @@
     </div>
   </div>
   <script type="text/javascript"  src="./js/ajax.js"></script>
-  <script src="./js/template-web.js"></script>
-  <script type="text/html" id="tpl">
-    {{each result}}
-    <li class="list-group-item">{{$value}}</li>
-    {{/each}}
   </script>
   <script>
     //获取搜索框
@@ -38,18 +42,36 @@
       //获取用户输入的内容
       var key = this.value;
       //向服务器端发送请求
-      ajax({
-        type:'get',
-        url:'http://127.0.0.1:3007/my/userinfo',
-        data:{
-          key:key
-        },
-        success:function(result){
-          var html = template('tpl',{result:result})
-          listBox.innerHTML = html ;
-          listBox.style.display = 'block';
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST','http://127.0.0.1:3007/api/userinfo');
+      xhr.send();
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4){
+          if(xhr.status >= 200 && xhr.status <= 300){
+            listBox.innerHTML = xhr.response;
+          }
         }
-      })
+
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      //ajax({
+        //type:'get',
+        //url:'http://127.0.0.1:3007/api/userinfo',
+        //data:{
+         //key:key
+        //},
+        //success: function () {
+
+        //},
+      //})
     }
 
   </script>

@@ -55,10 +55,14 @@ h2 {
 
 .form{
   width:100%;
-  margin-top:100px;
+  margin-top:60px;
 }
 
 .main-item{
   display:flex;
   justify-content:center;
+}
+
+#list-box{
+  margin:10px;
 }

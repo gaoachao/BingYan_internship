@@ -10,8 +10,9 @@ const cors = require('cors')
 
 app.get('/server',(request,response)=>{
   response.setHeader('Access-Control-Allow-Origin','*');
-response.send('Hello AJAX')
+  response.send('Hello AJAX')
 });
+
 
 
 
@@ -58,7 +59,8 @@ app.use('/api', userRouter)
 // 导入并使用用户信息路由模块
 const userinfoRouter = require('./router/userinfo')
 // 注意：以 /my 开头的接口，都是有权限的接口，需要进行 Token 身份认证
-app.use('/my', userinfoRouter)
+app.use('/api', userinfoRouter)  //修改
+
 
 // 导入并使用文章分类路由模块
 const artCateRouter = require('./router/artcate')

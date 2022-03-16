@@ -16,7 +16,7 @@
 <!--login-->
 <div class="form-container">
   <div class="form">
-    <form id="form" class="form" action="http://127.0.0.1:3007/api/login" method="post">
+  <form id="form" class="form" action="http://127.0.0.1:3007/api/login" method="post">  
       <div class="form-title">
         <h2>sign in</h2>
       </div class="form-main">
@@ -31,12 +31,47 @@
         <a href="./register.html" class="register-account">Register an account</a>
       </div>
       <div class="main-item">
-        <button type="submit" formaction="http://127.0.0.1:3007/api/login" method="post" class="login-button">sign in</button>
+      <button type="submit" formaction="http://127.0.0.1:3007/api/login"  class="login-button" id="login" method="post">sign in</button>  
+      <!-- <button class="login-button" id="login">sign in</button>  -->
       </div>
-    </form>
+      <div id="informaintion-box">
+        <div id="list-box"></div>
+      </div>
+    </form> 
   </div>
 </div>
 
 <body>
 </body>
 </html>
+
+
+
+<!--
+<script>
+  //获取搜索框
+  //var searchInp = document.getElementById('search');
+
+  var buttonInp = document.getElementById('login')
+  //获取提示文字的存放容器
+  var listBox = document.getElementById('list-box');
+  var passWord = document.getElementById('password');
+  var userName = document.getElementById('usename');
+
+
+  buttonInp.onclick = function (){
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST','http://127.0.0.1:3007/api/login');
+    xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    //xhr.send();
+    xhr.send('username = userName.value &  password = passWord.value');
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState === 4){
+        if(xhr.status >= 200 && xhr.status <= 300){
+          listBox.innerHTML = xhr.response;
+        }
+      }
+    }
+  }
+</script>  
+-->

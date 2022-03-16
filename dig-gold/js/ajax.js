@@ -59,7 +59,7 @@ function ajax (options) {
 			responseText = JSON.parse(responseText);
 		}
 		// 如果请求成功
-		if (xhr.status == 200) {
+		if (xhr.status == 1) {
 			// 调用成功回调函数, 并且将服务器端返回的结果传递给成功回调函数
 			defaults.success(responseText, xhr);
 		} else {
