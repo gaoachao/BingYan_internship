@@ -1,17 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device,user-scalable=no,
+  initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/userinfo.css">
+  <link rel="stylesheet" href="./CSS/fa/css/all.css">
+</head>
+<!--login-->
+<div class="form-container">
+  <div class="form">
+  <form id="form" class="form" action="http://127.0.0.1:3007/my/userinfo" method="get">  
+      <div class="form-title">
+        <h2>sign in</h2>
+      </div class="form-main">
 
-
-
-
-
-
-
-
-
-<div class="form-main">
-  <form id="form" class="form" action="http://127.0.0.1:3007/api/userinfo" method="get">
-    <div class="button-item">
-      <button type="submit" formaction="http://127.0.0.1:3007/api/userinfo" method="get" class="userinfo-button">sign in</button>
-    </div>
-  </form>
+      <div class="main-item">
+        <input type="text" name="username" id="username" class="username" placeholder="username...">
+      </div>
+      <div class="main-item">
+        <input type="password" name="password" id="password" class="password" placeholder="Password...">
+      </div>
+      <div class="main-item">
+        <a href="./register.html" class="register-account">Register an account</a>
+      </div>
+      <div class="main-item">
+      <button type="submit" formaction="http://127.0.0.1:3007/my/userinfo"  class="login-button" id="login" method="get">sign in</button>  
+      <!-- <button class="login-button" id="login">sign in</button>  -->
+      </div>
+      <div id="informaintion-box">
+        <div id="list-box"></div>
+      </div>
+    </form> 
+  </div>
 </div>
+
+<body>
+</body>
+</html>
+
+
+
+
+
+

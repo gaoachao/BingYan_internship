@@ -7,15 +7,112 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <title>base list</title>
         <link rel="stylesheet" href="CSS/minirefresh.css" />
+        <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/common.css" />
+        <link rel="stylesheet" href="./CSS/fa/css/all.css">
+        <script type="text/javascript" src="./js/front.js" ></script>
     </head>
 
     <body>
+    <div class="container">
+       <!-- 顶部搜索和签到 -->
+        <div class="search-index">
+          <div class="search">
+            <i class="fas fa-search" style="font-size:17px;"></i>
+            <span>探索稀土掘金</span>
+          </div>
 
-        <nav class="navbar-header">
-            <a class="nav-btn-left" href="./index.html">稀土掘金</a>
-            头条精选
-        </nav>
+          <a href="#" class="check">
+            <i class="fas fa-calendar-alt" style="font-size:18px;"></i>
+            <span>签到</span>
+          </a>
+        </div>
+    </div>
+    <!-- 顶部导航条 -->
+        <div class="container">
+          <nav class="nav">
+            <p class="con">
+              <a href="#" class="lis">关注</a>
+              <a href="./index.html" class="lis">推荐</a>
+              <a href="./index-hotlist.html" class="lis ">热榜</a>
+              <a href="./headline.html" class="lis now-list">头条精选</a>
+              <a href="javascript:;" class="lis">后端</a>
+              <a href="javascript:;" class="lis">前端</a>
+              <a href="javascript:;" class="lis">Android</a>
+              <a href="javascript:;" class="lis">iOS</a>
+              <a href="javascript:;" class="lis">人工智能</a>
+              <a href="javascript:;" class="lis">开发工具</a>
+              <a href="javascript:;" class="lis">代码人生</a>
+            </p>
+          </nav>
+          <div class="omiter" id="show" onMouseMove='showhidediv("msg")';>
+              <i class="fas fa-bars" style="font-size:22px;color:#4e5969;"></i>
+          </div>
+              </div>
+      <!--隐藏菜单-->
+              <div class="omiter-border" id="msg">
+          <ul class="omiter-list">
+                      <li class="omiter-item">
+                          <div class="item-style-all ">全部</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">前端</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">JavaScript</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">Vue.js</div>
+                      </li>
+                  </ul>
+                  <ul class="omiter-list">
+                      <li class="omiter-item">
+                          <div class="item-style">算法</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">React.js</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">CSS</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">Leetcode</div>
+                      </li>
+                  </ul>
+                  <ul class="omiter-list">
+                      <li class="omiter-item">
+                          <div class="item-style">Node.Js</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">面试</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">TypeScript</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">WebPack</div>
+                      </li>
+                  </ul>
+                  <ul class="omiter-list">
+                      <li class="omiter-item">
+                          <div class="item-style">架构</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">微信小程序</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">three.js</div>
+                      </li>
+                      <li class="omiter-item">
+                          <div class="item-style">Flutter</div>
+                      </li>
+                  </ul>
+              </div>
+
+
+
+
+
         
         <div class="content">
             <div id="minirefresh" class="minirefresh-wrap">
@@ -65,3 +162,19 @@
     </body>
 
 </html>
+<!--index顶部导航条实现点击变蓝事件-->
+<script type="text/javascript">
+    var buttons=document.querySelectorAll(".lis");
+    var l=buttons.length;
+    for(var i=0;i<l;i++){
+        buttons[i].onclick=function(){
+            for(var j=0;j<l;j++){
+                if(this==buttons[j]){
+                    this.className="active";
+                }else{
+                    buttons[j].className="";
+                }
+            }
+        }
+    }
+</script>

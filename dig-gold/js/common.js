@@ -68,6 +68,7 @@
 
       var html = '',
           dateStr = (new Date()).toLocaleString();
+          //利用时间函数，记录每一次刷新。
 
 
       counterArr[counterIndex] = 1 ; 

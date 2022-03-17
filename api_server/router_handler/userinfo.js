@@ -22,7 +22,4 @@ exports.getUserInfo = (req, res) => {
       data: results[0],
   })
 })
-
-
-
 }

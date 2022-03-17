@@ -1,0 +1,89 @@
+body {
+  padding:15px;
+}
+
+/* 封面容器的样式 */
+.cover-box {
+  display: flex;
+}
+
+/* 左侧裁剪区域的样式 */
+.cover-left {
+  width: 400px;
+  height: 280px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+/* 右侧盒子的样式 */
+.cover-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layui-card{
+  display:flex;
+  flex-direction: column;
+}
+.layui-card-header{
+  margin-top:30px;
+  display:flex;
+}
+
+.layui-card-header .header-title{
+  margin:15px auto;
+  color:rgb(67, 138, 246);
+  font-size:25px;
+}
+
+.layui-input{
+    margin: 8px auto;
+    padding: 12px;
+    background-color: #eee;
+    border: none;
+    width:70%;
+  }
+
+.layui-input-block .text-content{
+  margin: 8px auto;
+  padding: 12px;
+  background-color: #eee;
+  border: none;
+  width:70%;
+}
+
+.select-content{
+  width:70%;
+  background-color: #eee;
+  border: none;
+  height:25px;
+}
+.layui-form-label{
+  display:flex;
+  margin-top:5px;
+}
+.layui-form-label .label-title{
+  margin:3px 10px 3px 10px;
+  font-size:18px;
+}
+.layui-input-block{
+  display:flex;
+  justify-content: center;
+}
+.layui-btn{
+  margin:0 10px;
+}
+.block-button{
+  margin-top:10px;
+}
+
+.back{
+  margin-top:20px;
+}
+
+.back-home{
+  position:absolute;
+  right:5px;
+  color:black;
+}
