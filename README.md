@@ -1,5 +1,20 @@
 ## 2022春冰岩前端实习
 
+### 代码验收指南：
+
+```
+index.html  主页
+boiling.html 沸点
+home.html  我
+headline.html  主页-头条精选（含下拉刷新动画）
+index-hotlist.html  主页-热榜
+login.html  登录页面（从“我”页面点击进去）
+register.html  注册页面（从登录页面点击进入）
+art_pub.html  发布文章页面（从“我”-“创作者中心"点击进入）
+
+后台接口：请参照“服务器端口汇总.md”
+```
+
 ### scheme：
 
 - [x] 基本界面结构和样式
