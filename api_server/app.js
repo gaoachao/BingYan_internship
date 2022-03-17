@@ -67,10 +67,10 @@ const artCateRouter = require('./router/artcate')
 app.use('/my/article', artCateRouter)
 
 // 导入并使用文章路由模块
-const articleRouter = require('./router/article');
-const { response } = require('express');
-// 为文章的路由挂载统一的访问前缀 /my/article
+const articleRouter = require('./router/article')
 app.use('/my/article', articleRouter)
+
+
 
 //定义错误级别的中间件
 app.use(function (err, req, res, next) {
