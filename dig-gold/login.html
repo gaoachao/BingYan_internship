@@ -16,13 +16,13 @@
 <!--login-->
 <div class="form-container">
   <div class="form">
-  <form id="form" class="form" action="http://127.0.0.1:3007/api/login" method="post">  
+ <!-- <form id="form" class="form" action="http://127.0.0.1:3007/api/login" method="post">  -->
       <div class="form-title">
         <h2>sign in</h2>
       </div class="form-main">
 
       <div class="main-item">
-        <input type="text" name="username" id="username" class="username" placeholder="username...">
+        <input type="text" name="username" id="username" class="username" placeholder="Username...">
       </div>
       <div class="main-item">
         <input type="password" name="password" id="password" class="password" placeholder="Password...">
@@ -31,8 +31,8 @@
         <a href="./register.html" class="register-account">Register an account</a>
       </div>
       <div class="main-item">
-      <button type="submit" formaction="http://127.0.0.1:3007/api/login"  class="login-button" id="login" method="post">sign in</button>  
-      <!-- <button class="login-button" id="login">sign in</button>  -->
+      <!-- <button type="submit" formaction="http://127.0.0.1:3007/api/login"  class="login-button" id="login" method="post">sign in</button> --> 
+      <button class="login-button" id="login">sign in</button> 
       </div><div class="back">
         <a href="./home.html" class="back-home">
           返回首页
@@ -52,7 +52,6 @@
 
 
 
-<!--
 <script>
   //获取搜索框
   //var searchInp = document.getElementById('search');
@@ -61,15 +60,14 @@
   //获取提示文字的存放容器
   var listBox = document.getElementById('list-box');
   var passWord = document.getElementById('password');
-  var userName = document.getElementById('usename');
+  var userName = document.getElementById('username');
 
 
   buttonInp.onclick = function (){
     const xhr = new XMLHttpRequest();
     xhr.open('POST','http://127.0.0.1:3007/api/login');
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-    //xhr.send();
-    xhr.send('username = userName.value &  password = passWord.value');
+    xhr.send("username="+userName.value +"&password="+passWord.value); //此处需要用到字符串的拼接
     xhr.onreadystatechange = function(){
       if(xhr.readyState === 4){
         if(xhr.status >= 200 && xhr.status <= 300){
@@ -79,4 +77,3 @@
     }
   }
 </script>  
--->

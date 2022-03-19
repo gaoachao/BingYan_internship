@@ -7,7 +7,7 @@ const joi = require('@hapi/joi')
 // 导入 cors 中间件
 const cors = require('cors')
 
-
+//测试
 app.get('/server',(request,response)=>{
   response.setHeader('Access-Control-Allow-Origin','*');
   response.send('Hello AJAX')
@@ -37,11 +37,11 @@ app.use(function (req, res, next) {
     next()
   })
 
-  // 托管静态资源文件
+// 托管静态资源文件
 app.use('/uploads', express.static('./uploads'))
 
 
-//在路由之前配置Token的中间件
+// 在路由之前配置Token的中间件（必须要在路由之前）
 // 导入配置文件
 const config = require('./config')
 
